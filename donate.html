@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Micah Freeney - Donate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="brand">
+                <h1>Micah Freeney</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+
+        <main>
+            <section class="donate-intro">
+                <h2>Support My <span class="highlight">Work &amp; Projects</span></h2>
+                <p>Thank you for supporting my ongoing game development, 3D modeling, and software projects. Fill out
+                    the form below to submit a contribution.</p>
+            </section>
+
+            <div class="payment-section">
+                <form action="#" method="post">
+
+                    <fieldset class="payment-fieldset">
+                        <legend>Donor Information</legend>
+
+                        <div class="donor-field-row prefix-options">
+                            <label>Title / Prefix:</label>
+                            <input type="radio" id="title-mr" name="title" value="Mr." required>
+                            <label for="title-mr">Mr.</label>
+
+                            <input type="radio" id="title-ms" name="title" value="Ms.">
+                            <label for="title-ms">Ms.</label>
+
+                            <input type="radio" id="title-mrs" name="title" value="Mrs.">
+                            <label for="title-mrs">Mrs.</label>
+
+                            <input type="radio" id="title-mx" name="title" value="Mx.">
+                            <label for="title-mx">Mx.</label>
+                        </div>
+
+                        <div class="donor-half-col">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                        </div>
+
+                        <div class="donor-half-col col-right">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="donor-half-col">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="donor-half-col col-right">
+                            <label for="donate-date">Date:</label>
+                            <input type="date" id="donate-date" name="donate_date" required>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="donor-half-col">
+                            <label for="phone-type">Phone Type:</label>
+                            <select id="phone-type" name="phone_type" required>
+                                <option value="">-- Select Phone Type --</option>
+                                <option value="mobile">Mobile</option>
+                                <option value="home">Home</option>
+                                <option value="work">Work</option>
+                            </select>
+                        </div>
+
+                        <div class="donor-half-col col-right">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="478-555-0199"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <span class="field-format-note">Format: 123-456-7890</span>
+                        </div>
+                        <div class="clear"></div>
+                    </fieldset>
+
+
+                    <fieldset class="payment-fieldset">
+                        <legend>Card &amp; Contribution Details</legend>
+
+                        <div class="donor-field-row">
+                            <label for="price">Donation Amount ($ USD):</label>
+                            <input type="number" id="price" name="price" min="1" max="10000" step="0.01"
+                                placeholder="25.00" required>
+                        </div>
+
+                        <div class="donor-half-col">
+                            <label for="cc-num">Credit Card Number:</label>
+                            <input type="text" id="cc-num" name="cc_num" inputmode="numeric" pattern="[0-9]{13,19}"
+                                maxlength="19" placeholder="1234567812345678" required>
+                            <span class="field-format-note">13 to 19 digits, numbers only (no spaces or dashes)</span>
+                        </div>
+
+                        <div class="donor-half-col col-right">
+                            <label for="cvv">Security Code (CVV):</label>
+                            <input type="text" id="cvv" name="cvv" inputmode="numeric" pattern="[0-9]{3,4}"
+                                maxlength="4" placeholder="123" required>
+                            <span class="field-format-note">3 or 4 digit code on back of card</span>
+                        </div>
+                        <div class="clear"></div>
+                    </fieldset>
+
+
+                    <div class="donor-field-row terms-agreement">
+                        <input type="checkbox" id="terms" name="terms" value="agreed" required>
+                        <label for="terms">I agree to the terms and conditions and authorize this one-time
+                            payment.</label>
+                    </div>
+
+                    <div class="payment-actions">
+                        <button type="submit" class="btn-donate-submit">Submit Payment</button>
+                        <button type="reset" class="btn-donate-clear">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Micah Freeney | Middle Georgia State University &bull; ITEC 2380</p>
+        </footer>
+    </div>
+</body>
+
+</html>
